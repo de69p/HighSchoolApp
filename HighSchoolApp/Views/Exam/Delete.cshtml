@@ -1,0 +1,6 @@
+<h2>Delete Exam</h2>
+<form method="post" action="@Url.Action("DeleteConfirmed", "Exam")">
+    <input type="hidden" name="id" value="@Model.ExamId" />
+    Are you sure you want to delete the exam with score @Model.Score for student ID @Model.StudentId?
+    <input type="submit" value="Delete" />
+</form>

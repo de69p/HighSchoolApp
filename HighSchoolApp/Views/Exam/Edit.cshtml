@@ -1,0 +1,7 @@
+<h2>Edit Exam</h2>
+<form method="post" action="@Url.Action("Edit", "Exam")">
+    <input type="hidden" name="ExamId" value="@Model.ExamId" />
+    Student ID: <input type="number" name="StudentId" value="@Model.StudentId" required /><br />
+    Score: <input type="number" name="Score" value="@Model.Score" required /><br />
+    <input type="submit" value="Update" />
+</form>

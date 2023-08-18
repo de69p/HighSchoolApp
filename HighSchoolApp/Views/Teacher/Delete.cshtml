@@ -1,0 +1,6 @@
+<h2>Delete Teacher</h2>
+<form method="post" action="@Url.Action("DeleteConfirmed", "Teacher")">
+    <input type="hidden" name="id" value="@Model.TeacherId" />
+    Are you sure you want to delete @Model.FirstName @Model.LastName?
+    <input type="submit" value="Delete" />
+</form>

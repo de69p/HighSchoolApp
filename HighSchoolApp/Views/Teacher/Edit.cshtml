@@ -1,0 +1,7 @@
+<h2>Edit Teacher</h2>
+<form method="post" action="@Url.Action("Edit", "Teacher")">
+    <input type="hidden" name="TeacherId" value="@Model.TeacherId"/>
+    First Name: <input type="text" name="FirstName" value="@Model.FirstName" required/><br/>
+    Last Name: <input type="text" name="LastName" value="@Model.LastName" required/><br/>
+    <input type="submit" value="Update"/>
+</form>

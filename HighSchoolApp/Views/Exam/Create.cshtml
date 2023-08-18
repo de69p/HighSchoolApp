@@ -1,0 +1,13 @@
+<h2>Create Exam</h2>
+<form method="post" action="@Url.Action("Create", "Exam")">
+    Student ID: 
+    <select name="StudentId" required>
+        @foreach (var id in ViewBag.StudentIds)
+        {
+            <option value="@id">@id</option>
+        }
+    </select>
+    <br />
+    Score: <input type="number" name="Score" required /><br />
+    <input type="submit" value="Create" />
+</form>
